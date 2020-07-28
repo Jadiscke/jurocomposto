@@ -1,0 +1,21 @@
+{% extends 'layout.njk' %}
+{% set title = "JuroComposto.net" %}
+{% block content %}
+<main>
+  <div class="interest">
+    <div class="interest-inputs">
+      <input type="number" placeholder="Aplicação Inicial em R$"  onkeypress="return event.charCode >= 48" min=0>
+      <input type="number" placeholder="Aplicação Mensal em R$"  onkeypress="return event.charCode >= 48" min=0>
+      <input type="number" placeholder="Meses"min=0  onkeypress="return event.charCode >= 48" step=1>
+      <input type="number" placeholder="Taxa%"min=0  onkeypress="return event.charCode >= 48 || event.charCode === 44" step=0.1>
+      <select name="interest_type">
+        <option value="yearly">Anual</option>
+        <option value="monthly">Mensal</option>
+      </select>
+    </div>
+    <h1>JuroComposto.net</h1>
+    <div class="result"></div>
+  </div>
+  
+</main>
+{% endblock content %}
