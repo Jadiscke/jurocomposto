@@ -119,15 +119,32 @@ body {
   align-self: end;
   justify-content: center;
   margin: 0 auto;
+  font-size: 18px;
 }
-#page main .interest .interest-inputs *{
+#page main .interest .interest-inputs div{
+  display: inline-block;
+  position: relative;
+}
+#page main .interest .interest-inputs div label{
+  display: inline-block;
+  position: absolute;
+  height: 50%;
+  width: 30px;
+  left:8px;
+  top: 50%;
+  transform: translateY(-45%);
+  z-index: 1000;
+}
+
+#page main .interest .interest-inputs input,
+#page main .interest .interest-inputs select{
   border: 1px solid var(--primary-color);
   background-color: var(--secondary-color);
-  padding: 15px 5px 15px 30px;
-}
-#page main .interest .interest-inputs input{
-
+  padding: 15px 5px 15px 35px;
   margin-right: 16px;
+}
+#page main .interest .interest-inputs select{
+  margin-right: 0;
 }
 #page main .interest .interest-inputs input:nth-child(1),
 #page main .interest .interest-inputs input:nth-child(2){
@@ -135,10 +152,20 @@ body {
   position: relative;
 }
 #page main .interest .interest-inputs input:nth-child(3),
-#page main .interest .interest-inputs input:nth-child(4),
-#page main .interest .interest-inputs input:nth-child(5){
+#page main .interest .interest-inputs input:nth-child(4){
   width: 100px;
 }
+
+#page main .interest .interest-inputs input[type="submit"]{
+  padding: 15px;
+  margin-left: 30px;
+  box-shadow: 0 1px 2px var(--font-color-1);
+}
+#page main .interest .interest-inputs input[type="submit"]:hover{
+  transform: translateY(1px);
+  filter: brightness(80%);
+}
+
 #page main .interest h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 48px;
