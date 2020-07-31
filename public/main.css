@@ -13,14 +13,16 @@
   box-sizing: border-box;
   outline: none;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   width: 100vw;
   height: auto;
-  margin: 0;
-  padding: 0;
+  
 }
 
 #page {
@@ -37,8 +39,8 @@ body {
 #page header {
   font-family: 'Montserrat', sans-serif;
   background-color: var(--primary-color);
-  padding: 15px;
-  font-size: 24px;
+  padding: 1rem;
+  font-size: 1.5rem;
   align-self: start;
 }
 
@@ -92,7 +94,7 @@ body {
 /* Footer */
 #page footer {
   align-self: end;
-  padding: 15px;
+  padding: 1rem;
   background-color: var(--primary-color);
   color: var(--font-color-2);
   display: flex;
@@ -101,11 +103,12 @@ body {
   justify-content: center;
 }
 #page footer span {
-  margin-right: 16px;
+  margin-right: 1rem;
 }
 /* Main */
 #page main {
   margin: 0 auto;
+  padding: 5rem 0;
   width: 100%;
   max-width: 940px;
 }
@@ -129,7 +132,7 @@ body {
   display: inline-block;
   position: absolute;
   height: 50%;
-  width: 30px;
+  width: 2rem;
   left:8px;
   top: 50%;
   transform: translateY(-45%);
@@ -139,6 +142,7 @@ body {
 #page main .interest .interest-inputs input,
 #page main .interest .interest-inputs select{
   border: 1px solid var(--primary-color);
+  border-radius: 4px;
   background-color: var(--secondary-color);
   padding: 15px 5px 15px 35px;
   margin-right: 16px;
@@ -156,17 +160,19 @@ body {
   width: 100px;
 }
 
-#page main .interest .interest-inputs input[type="submit"]{
+#page main .interest .interest-inputs button{
+  background-color: var(--secondary-color);
   padding: 15px;
-  margin-left: 30px;
+  margin-left: 15px;
   box-shadow: 0 1px 2px var(--font-color-1);
 }
-#page main .interest .interest-inputs input[type="submit"]:hover{
+#page main .interest .interest-inputs button:hover{
   transform: translateY(1px);
   filter: brightness(80%);
 }
 
 #page main .interest h1 {
+  padding: 3rem 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 48px;
   line-height: 58px;
@@ -191,4 +197,5 @@ input[type=number] {
   padding: 10px 30px;
   height: 50px;
   text-align: center;
+  border-radius: 4px;
 }
