@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm-run-all -p -r browsersync nodemon",
+    "develop": "npm-run-all -p -r browsersync nodemon",
     "nodemon": "nodemon src/server.js",
-    "browsersync": "browser-sync start --proxy http://localhost:3000 --port=3001 --files 'public,src/app/views'"
+    "browsersync": "browser-sync start --proxy http://localhost:3000 --port=3001 --files 'public,src/app/views'",
+    "start": "node src/server.js"
   },
   "repository": {
     "type": "git",
