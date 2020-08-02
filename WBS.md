@@ -19,7 +19,7 @@
   - [ ] Display Content
   - [ ] Pagination
 - [ ] Media Query
-  - [ ] Calculator
+  - [x] Calculator
   - [ ] Text Content
   - [ ] Blog
 - [ ] SEO
